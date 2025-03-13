@@ -1,0 +1,96 @@
+/* Сброс стилей по умолчанию */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основной контейнер */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../../obrazy/ds.jpg");
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Заголовок */
+h1 {
+    background-color: rgba(51, 51, 51, 0.5);
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: white;
+}
+
+/* Форма */
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label,
+form input {
+    line-height: 1.5; /* Примерное значение, подберите подходящее */
+}
+
+form input {
+    width: 100%;
+    border-radius: 1px;
+    border-color: #cccccc;
+    padding: 5px;
+}
+
+form input:focus {
+    border-color: #333;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(75, 0, 130);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+form button:hover {
+    background-color: rgba(75, 0, 130, 0.5);
+}
+
+/* Футер */
+footer {
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}

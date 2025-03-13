@@ -1,0 +1,172 @@
+/* Сброс стилей по умолчанию */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основной контейнер */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../../obrazy/ds.jpg");
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Заголовок */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: white;
+}
+header {
+    background-color: rgba(51, 51, 51, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+/* Навигационное меню */
+nav {
+    background-color: rgba(51, 51, 51, 0.5);
+    padding: 5px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    background-color: rgba(51, 51, 51, 0);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 5px;
+    border-radius: 5px; /* To round the corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+/* Навигационное меню: при наведении */
+nav ul li a:hover {
+    transform: translateY(-3px); /* Create the stacked effect */
+    text-decoration: underline;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+/* Контейнер для таблиц */
+.table-container {
+    display: flex;
+    justify-content: space-between; /* Разделение пространства между таблицами */
+    gap: 200px; /* Отступы между таблицами */
+    flex-wrap: wrap; /* Если не хватает места, переносить на следующую строку */
+}
+
+/* Таблицы */
+table {
+    border-collapse: collapse;
+    width: auto; /* Ширина таблицы подстраивается под содержимое */
+    border: 1px solid black;
+    text-align: center;
+}
+
+caption {
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+}
+th {
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white;
+}
+td {
+    background-color: rgba(211, 211, 211, 0.5);
+}
+/* Modal Styles */
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed; /* Position the modal on top of the page */
+    z-index: 1; /* Ensure the modal appears on top of other elements */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if content exceeds window height */
+    background-color: rgba(0,0,0,0.4); /* Dark overlay */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Adjust width as needed */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.save-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 16px;
+    cursor: pointer;
+    display: block; /* Убедитесь, что кнопка отображается */
+    margin: 10px auto; /* Центрируйте кнопку */
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Футер */
+footer {
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}

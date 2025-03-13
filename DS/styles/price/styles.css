@@ -1,0 +1,211 @@
+/* Сброс стилей по умолчанию */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основной контейнер */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../../obrazy/ds.jpg");
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Заголовок
+h1 {
+    background-color: rgba(51, 51, 51, 0.5);
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: white;
+}*/
+/* Навигационное меню */
+nav {
+    background-color: rgba(51, 51, 51, 0.5);
+    padding: 5px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    background-color: rgba(51, 51, 51, 0);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 5px;
+    border-radius: 5px; /* To round the corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Навигационное меню: при наведении */
+nav ul li a:hover {
+    background-color: rgba(75, 0, 130, 0);
+    transform: translateY(-3px); /* Create the stacked effect */
+}
+h2 {
+    color: white;
+    text-align: center;
+    text-shadow: black;
+    background-color: rgba(51, 51, 51, 0.5);
+}
+/* Таблица с расписанием */
+/* Таблица с расписанием */
+form {
+    margin: 0;
+    padding: 0;
+}
+/* Контейнер для таблиц */
+.table-container {
+    display: flex;
+    justify-content: space-between; /* Разделение пространства между таблицами */
+    gap: 200px; /* Отступы между таблицами */
+    flex-wrap: wrap; /* Если не хватает места, переносить на следующую строку */
+}
+
+/* Таблицы */
+table {
+    border-collapse: collapse;
+    width: auto; /* Ширина таблицы подстраивается под содержимое */
+    border: 1px solid black;
+    text-align: center;
+}
+
+caption {
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+}
+th {
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white;
+}
+td {
+    background-color: rgba(211, 211, 211, 0.5);
+}
+/* Кнопка "Купить" */
+.buy-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+header {
+    background-color: rgba(51, 51, 51, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.buy-btn:hover {
+    background-color: #45a049; /* Более темный зеленый при наведении */
+}
+
+.buy-btn:active {
+    background-color: #3e8e41; /* Темно-зеленый при нажатии */
+}
+/* Кнопка "Заплатить" */
+.pay-button {
+    background-color: #2196F3; /* Синий фон */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pay-button:hover {
+    background-color: #1976D2; /* Более темный синий при наведении */
+    transform: scale(1.05);
+}
+
+.pay-button:active {
+    background-color: #1565C0; /* Темно-синий при нажатии */
+    transform: scale(0.98);
+}
+
+/* Модальное окно */
+#payment-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 300px;
+}
+
+#payment-modal h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+#payment-modal input, #payment-modal select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Затемнение фона при открытом модальном окне */
+body.modal-open {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+form{
+    background-color: rgba(255,255,255,0.5);
+}
+/* Футер */
+footer {
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+

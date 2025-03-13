@@ -1,0 +1,154 @@
+/* Сброс стилей по умолчанию */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основной контейнер */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../../obrazy/ds.jpg");
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Заголовок */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: white;
+}
+
+/* Навигационное меню */
+nav {
+    background-color: rgba(51, 51, 51, 0.5);
+    padding: 5px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    background-color: rgba(51, 51, 51, 0);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 5px;
+    border-radius: 5px; /* To round the corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+/* Навигационное меню: при наведении */
+nav ul li a:hover {
+    transform: translateY(-3px); /* Create the stacked effect */
+    text-decoration: underline;
+}
+header {
+    background-color: rgba(51, 51, 51, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+/* Поле ввода сообщения */
+/* Контейнер с двумя колонками */
+.container {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 140px); /* Высота окна браузера минус заголовок и навигация */
+}
+
+/* Левая часть — чат */
+.messages {
+    flex: 2; /* Занимает больше места */
+    overflow-y: auto;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.message strong {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Правая часть — форма отправки */
+.form-container {
+    flex: 1; /* Занимает меньше места */
+    padding: 20px;
+    background-color: rgba(255,255,255,0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.form-container button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+
+/* Футер */
+footer {
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}

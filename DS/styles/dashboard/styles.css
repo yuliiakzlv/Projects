@@ -1,0 +1,123 @@
+/* Сброс стилей по умолчанию */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основной контейнер */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("../../obrazy/ds.jpg");
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Заголовок */
+h1 {
+    background-color: rgba(51, 51, 51, 0.5);
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: white;
+}
+h2{
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white;
+}
+/* Навигационное меню */
+nav {
+    background-color: rgba(51, 51, 51, 0.5);
+    padding: 5px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    background-color: rgba(51, 51, 51, 0);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 5px;
+    border-radius: 5px; /* To round the corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+/* Навигационное меню: при наведении */
+nav ul li a:hover {
+    transform: translateY(-3px); /* Create the stacked effect */
+    text-decoration: underline;
+}
+header h1 {
+    background-color: rgba(51, 51, 51, 0.5);
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+/* Форма */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255,255,255,0.5);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+.cancel-button {
+    background-color: darkgreen; /* Зеленый цвет */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+.cancel-button:hover {
+    background-color: #4CAF50;
+}
+/* Футер */
+footer {
+    background-color: rgba(51, 51, 51, 0.5);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
